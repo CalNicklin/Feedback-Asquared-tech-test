@@ -1,0 +1,19 @@
+
+.searchbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    justify-content: center;
+}
+
+input {
+    border-color: rgb(62, 158, 255);
+    border-radius: 1rem;
+    font-size: 1.1rem;
+}
+
+button {
+    border-color: rgb(62, 158, 255);
+    border-radius: 1rem;
+    font-size: 1.1rem;
+}

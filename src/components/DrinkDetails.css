@@ -1,0 +1,52 @@
+
+.detailPage {
+    width: 100%;
+    padding-top: 5rem;
+}
+
+.detailCard {
+    width: 60%;
+    margin-left: 17%;
+    border: 3px, solid, rgb(62, 158, 255);
+    border-radius: 2rem;
+    padding:2rem;
+    box-shadow: 10px 5px 5px rgb(192, 196, 241);
+    margin-bottom: 15%;
+}
+
+.detailThumb {
+    width: 80%;
+    border-radius: 2rem;
+    margin-left: 10%;
+}
+
+.title {
+    width: 80%;
+    font-size: 2rem;
+}
+
+.ingreds {
+    width: 80%;
+}
+
+.method {
+    width: 80%
+}
+
+.table {
+    border: 1px, black, solid;
+}
+
+table {
+	display: table;
+}
+table tr {
+	display: table-cell;
+    border: 1px, black, solid;
+}
+table tr td {
+	display: block;
+}
+
+td:nth-child(even) {background-color: #f2f2f2;}
+
