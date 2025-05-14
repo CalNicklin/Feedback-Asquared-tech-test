@@ -1,0 +1,25 @@
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 60px;
+    aspect-ratio: 4;
+    background: radial-gradient(circle closest-side,rgb(62, 158, 255) 90%,#0000) 0/calc(100%/3) 100% space;
+    clip-path: inset(0 100% 0 0);
+    animation: l1 1s steps(4) infinite;
+    margin-left: 20%;
+    margin-top: 10%;
+  }
+
+  @keyframes l1 {to{clip-path: inset(0 -34% 0 0)}}
+
+  .loadingScreen {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 20%;
+  }
+
+  .loadingScreen h1 {
+    color: rgb(62, 158, 255);
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }

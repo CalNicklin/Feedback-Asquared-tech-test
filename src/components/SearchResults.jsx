@@ -1,10 +1,8 @@
 import { Link } from 'react-router-dom';
-import { useState } from "react";
 import './SearchResults.css'
 
 function SearchResults({searchResults}) {
-    console.log(searchResults);
-
+   
     return (
         <div className='searchResults'>
             {

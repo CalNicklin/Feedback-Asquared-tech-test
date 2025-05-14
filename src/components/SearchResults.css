@@ -50,8 +50,8 @@ li {
 }
 
 .searchResults {
-    width: 80%;
-    margin-left: 14%;
+    width: 100%;
+    justify-content: space-around;
     padding-top: 5rem;
     display: flex;
     flex-wrap: wrap;

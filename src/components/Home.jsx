@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import './Home.css'
 
 function Home({drinks}) {
-    
+
 
     return (
         <div className='home'>

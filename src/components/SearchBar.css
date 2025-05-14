@@ -3,17 +3,22 @@
     position: fixed;
     width: 100%;
     z-index: 1;
+    margin-top: 3%;
     justify-content: center;
+    display: flex;
 }
 
 input {
     border-color: rgb(62, 158, 255);
     border-radius: 1rem;
-    font-size: 1.1rem;
+    font-size: 200%;
+    width: 40%;
 }
 
 button {
     border-color: rgb(62, 158, 255);
     border-radius: 1rem;
-    font-size: 1.1rem;
+    font-size: 100%;
+    height: 100%;
+    width: 100%;
 }

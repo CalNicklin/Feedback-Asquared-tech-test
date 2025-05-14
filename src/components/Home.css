@@ -8,12 +8,11 @@
 }
 
 .tile {
-    margin: 0, auto;
-    justify-content: space-around;
+    
     width: 45%;
     height: fit-content;
     display: flex;
-    min-width: 220px;
+    min-width: 240px;
 }
 
 .caption {
@@ -50,8 +49,8 @@ li {
 }
 
 .home {
-    width: 80%;
-    margin-left: 14%;
+    width: 100%;
+    justify-content: space-around;
     padding-top: 5rem;
     display: flex;
     flex-wrap: wrap;

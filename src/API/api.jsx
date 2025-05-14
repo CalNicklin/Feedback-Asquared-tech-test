@@ -30,7 +30,6 @@ const cocktailDB = {
     if (!jsonResponse) {
         console.error("Response Error!");
     };
-    console.log(jsonResponse);
     const data = await jsonResponse.drinks.map((d) => ({
         id: d.idDrink,
         name: d.strDrink,
@@ -71,7 +70,6 @@ const cocktailDB = {
         ]
         
     }));
-    console.log(data);
     
     return data;
 },
@@ -125,12 +123,11 @@ const cocktailDB = {
             ]
         }));
         
-        
         return data;
  },
 };
 
-console.log(cocktailDB.search())
+
 
 
 
