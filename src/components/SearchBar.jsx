@@ -1,7 +1,7 @@
 import React ,{useState} from "react";
 import { Link } from 'react-router-dom';
 import './SearchBar.css'
-import { use } from "react";
+
 
 
 function SearchBar(props) {

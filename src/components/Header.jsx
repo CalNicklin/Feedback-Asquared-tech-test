@@ -13,7 +13,7 @@ function Header() {
     return (
         <div className='header'>
         <h1>Fetch me a cocktail</h1>
-        <button className='back' onClick={() => navigate(-1)} style={{ opacity: hideBackButton ? '0' : '10' }}><img src="../src/resources/backarrow.png"/></button>
+        <button className='back' onClick={() => navigate(-1)} style={{ opacity: hideBackButton ? '0' : '10' }}>BACK</button>
         </div>
     )
 };

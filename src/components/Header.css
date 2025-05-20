@@ -21,22 +21,22 @@
 
 .back {
     float: left;
-    margin-left: 1rem;
+    margin-left: 2rem;
     z-index: 1; 
-    background: transparent;
+    background-color: transparent;
+    color: aliceblue;
     box-shadow: none;
     border: none;
     position: relative;
-    width: 5px;
+    width: 10px;
+    font-family: "Roboto mono";
+    font-size: 1.2rem;
 }
 
-.back img {
-    width: 4rem;
-    float: left;
-}
 
-.back img:hover {
-    width: 4.4rem;
+
+.back:hover {
+    font-size: 1.1rem;
     
 }
 
@@ -46,13 +46,5 @@
     margin-top: .75rem;
   }
 
-  .back img {
-    width: 2rem;
-    float: left;
-}
-
-  .back {
-    margin-left: none;
-    width: 3px;
-  }
+  
 }
