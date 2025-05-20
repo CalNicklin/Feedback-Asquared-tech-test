@@ -11,9 +11,9 @@ function SearchResults({searchResults}) {
                                 <div  className='tile' key={drink.id}>
                                     <Link className='link' to={{ pathname: "/drinkDetails/" + drink.id}} >
                                     <li className='item'>
-                                        <h3 className='caption'>{drink.name}</h3>
+                                        <h2 className='caption'>{drink.name}</h2>
                                         <img className='thumbNail' src={drink.image} />
-                                        <h3 className='caption'>Click for details</h3>
+                                        <h3 >Click for details</h3>
                                     </li>
                                     </Link>
                                 </div>

@@ -30,7 +30,7 @@ function SearchBar(props) {
     return (
     <div className='searchbar'>
       <input
-        placeholder="Search for a cocktail!"
+        placeholder="Search for a cocktail"
         onChange={handleTermChange}
         onKeyUp={keyUp}
         value={term}

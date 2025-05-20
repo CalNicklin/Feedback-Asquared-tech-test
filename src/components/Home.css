@@ -79,8 +79,12 @@ li {
     height: fit-content;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
     .caption {
         font-size: 1.5rem;
+    }
+
+    .tile {
+        min-width: calc(80%);
     }
 }

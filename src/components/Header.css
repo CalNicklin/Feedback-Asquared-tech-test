@@ -22,15 +22,17 @@
 .back {
     float: left;
     margin-left: 2rem;
+    margin-top: 2rem;
     z-index: 1; 
-    background-color: transparent;
-    color: aliceblue;
+    background-color: aliceblue;
     box-shadow: none;
     border: none;
     position: relative;
     width: 10px;
     font-family: "Roboto mono";
     font-size: 1.2rem;
+    width: fit-content;
+    height: fit-content;
 }
 
 
@@ -57,6 +59,6 @@
 
   .back {
     font-size: 0.8;
-    margin-left: 1rem;
+    margin-left: .5rem;
   }
 }
