@@ -2,67 +2,76 @@
 .detailPage {
     width: 100%;
     padding-top: 7rem;
+    display: flex;
+    justify-content: center;
 }
 
 .detailCard {
     width: 60%;
-    margin-left: 17%;
     border: 3px, solid, rgb(62, 158, 255);
     border-radius: 2rem;
     padding:2rem;
     box-shadow: 10px 5px 5px rgb(192, 196, 241);
     margin-bottom: 15%;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 .detailThumb {
     width: 80%;
     border-radius: 2rem;
-    margin-left: 10%;
+    
 }
 
 .title {
     width: 100%;
     font-size: 2rem;
-    margin: 0, auto;
+    margin: 0;
+    padding: 2%;
     text-align: center;
+    color: rgb(22, 51, 165);
 }
 
 .ingreds {
+    font-family: "Roboto mono";
     margin-top: 2%;
     width: 100%;
     text-align: center;
-    background-color: #9fdbee;
+    background-color: #c7eefa;
     padding-bottom: 2%;
     padding-top: 1%;
     border-radius: 1rem;
+    display: flexbox;
+    justify-content: center;
 }
 
 .method {
+    font-family: "Roboto mono";
     margin-top: 2%;
     width: 100%;
     text-align: center;
-    background-color: #9fdbee;
+    background-color: #c7eefa;
     border-radius: 1rem;
-    padding-bottom: 2%;
-    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-top: 1%;    
 }
 
 .method p {
-    margin-top: 2%;
+    font-size: 12px;
+    margin: 1rem;
 }
 
 .table {
     margin-top: 2%;
-    border: 1px, rgb(62, 158, 255);
-    margin-left: 35%;
-    width: 30%;
+    margin-left: 15%;
+    width: 70%;
+    font-size: 12px;
+    margin-top: 2%;
 }
 
 table {
 	display: table;
-    
 }
 table tr {
 	display: table-cell;
@@ -70,9 +79,16 @@ table tr {
 }
 table tr td {
 	display: block;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 td:nth-child(odd) {
     background-color: white;
 }
 
+@media only screen and (max-width: 500px) {
+    .table {
+        
+    }
+}

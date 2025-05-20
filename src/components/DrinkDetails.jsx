@@ -46,7 +46,7 @@ function DrinkDetails() {
                                         <tr>
                                             {d.ingredients.map((i) => {
                                                 return (
-                                                    <td key={d.ingredients[i]}>{i}</td>
+                                                    <td key={d[i]}>{i}</td>
                                                 )
                                             })}
                                         </tr>

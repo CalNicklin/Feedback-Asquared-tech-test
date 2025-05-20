@@ -36,7 +36,7 @@ function SearchBar(props) {
         value={term}
       />
       <Link to={{ pathname: "/searchResults"}}>
-      <button  onClick={() => {passTerm(); handleClear()}} >
+      <button  type="button" onClick={() => {passTerm(); handleClear()}} >
         SEARCH
       </button>
       </Link>

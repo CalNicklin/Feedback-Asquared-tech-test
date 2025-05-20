@@ -3,7 +3,7 @@
     position: fixed;
     width: 100%;
     z-index: 1;
-    margin-top: 3%;
+    margin-top: 2rem;
     justify-content: center;
     display: flex;
 }
@@ -13,12 +13,36 @@ input {
     border-radius: 1rem;
     font-size: 200%;
     width: 40%;
+    min-width: 19rem;
 }
 
 button {
     border-color: rgb(62, 158, 255);
     border-radius: 1rem;
-    font-size: 100%;
+    color: rgb(62, 158, 255);
+    font-size: 2rem;
     height: 100%;
     width: 100%;
+    min-width: 2rem;
+    font-family: "Roboto mono";
+}
+
+button:hover {
+    transform: translateX(3px) translateY(3px);
+    color: rgb(22, 51, 165);
+}
+
+@media only screen and (max-width: 500px) {
+    input {
+        font-size: 1.5rem;
+        width: 90%;
+        border-radius: .5rem;
+        min-width: 10rem;
+    }
+
+    button {
+        font-size: 1.2rem;
+        width: 100%;
+        border-radius: .5rem;
+    }
 }
