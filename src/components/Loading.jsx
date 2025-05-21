@@ -5,7 +5,7 @@ function Loading() {
 
     return (
         <div className="loadingScreen">
-        <span><h1>Loading</h1><div className="loader"></div></span>
+            <span><h1>Loading</h1><div className="loader"></div></span>
         </div>
     )
 };

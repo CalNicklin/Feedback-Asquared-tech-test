@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { cocktailDB } from "../API/api";
-import Loading from './Loading';
+import Loading from '../components/Loading';
 import './DrinkDetails.css'
 
 function DrinkDetails() {
