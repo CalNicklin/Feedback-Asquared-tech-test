@@ -6,6 +6,7 @@
     margin-top: -5rem;
     position: fixed;
     z-index: 2;
+    display: flex;
   }
   
   .header h1 {

@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
-import './SearchResults.css'
+import './Home.css';
 
 function SearchResults({searchResults}) {
    
     return (
-        <div className='searchResults'>
+        <div className='home'>
             {
                             searchResults.map((drink) => {
                             return (

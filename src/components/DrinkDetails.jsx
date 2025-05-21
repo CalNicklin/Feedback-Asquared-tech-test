@@ -24,53 +24,53 @@ function DrinkDetails() {
 
     if (loading === 'true') {
         return (
-          <>
-          <Loading />
-          </>
+            <>
+                <Loading />
+            </>
         )
-      } else {
+    } else {
 
-    return (
-        <div className="detailPage">
-            {
-                drink.map((d) => {
-                    return (
-                        <div className='detailCard' key={d.id + 1}>
-                            <img className='detailThumb' src={d.image} />
-                            <h2 className="title">{d.name}</h2>
-                            <div className="ingreds">
-                                <h3>Ingredients</h3>
-                                <table className="table">
-                                    <tbody>
+        return (
+            <div className="detailPage">
+                {
+                    drink.map((d) => {
+                        return (
+                            <div className='detailCard' key={d.id + 1}>
+                                <img className='detailThumb' src={d.image} />
+                                <h2 className="title">{d.name}</h2>
+                                <div className="ingreds">
+                                    <h3>Ingredients</h3>
+                                    <table className="table">
+                                        <tbody>
 
-                                        <tr>
-                                            {d.ingredients.map((i) => {
-                                                return (
-                                                    <td key={d[i]}>{i}</td>
-                                                )
-                                            })}
-                                        </tr>
-                                        <tr>
-                                            {d.measures.map((i) => {
-                                                return (
-                                                    <td key={d.ingredients[i]}>{i}</td>
-                                                )
-                                            })}
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                            <tr>
+                                                {d.ingredients.map((i) => {
+                                                    return (
+                                                        <td key={d[i]}>{i}</td>
+                                                    )
+                                                })}
+                                            </tr>
+                                            <tr>
+                                                {d.measures.map((i) => {
+                                                    return (
+                                                        <td key={d.ingredients[i]}>{i}</td>
+                                                    )
+                                                })}
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div className="method">
+                                    <h3 >Method</h3>
+                                    <p>{d.recipe}</p>
+                                </div>
                             </div>
-                            <div className="method">
-                                <h3 >Method</h3>
-                                <p>{d.recipe}</p>
-                            </div>
-                        </div>
-                    )
-                })
-            }
-        </div>
-    )
-};
+                        )
+                    })
+                }
+            </div>
+        )
+    };
 }
 
 export default DrinkDetails;
