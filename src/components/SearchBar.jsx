@@ -1,16 +1,11 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
 import './SearchBar.css'
-
+import { useNavigate } from "react-router-dom";
 
 
 function SearchBar(props) {
-
+  const navigate = useNavigate()
   const [term, setTerm] = useState("");
-
-  function passTerm() {
-    props.onSearch(term);
-  };
 
   function handleTermChange({ target }) {
     setTerm(target.value);
@@ -24,8 +19,19 @@ function SearchBar(props) {
   function keyUp(event) {
     if (event.key === "Enter") {
       props.onSearch(term);
+      navigate('/searchresults');
+      handleClear();
     }
   };
+
+  function newSearch() {
+    if (term) {
+      props.onSearch(term);
+      navigate('/searchresults');
+      handleClear();
+    }
+  };
+
 
   return (
     <div className='searchbar'>
@@ -33,13 +39,12 @@ function SearchBar(props) {
         placeholder="Search for a cocktail"
         onChange={handleTermChange}
         onKeyUp={keyUp}
+        required
         value={term}
       />
-      <Link to={{ pathname: "/searchResults" }}>
-        <button type="button" onClick={() => { passTerm(); handleClear() }} >
-          SEARCH
-        </button>
-      </Link>
+      <button id='button' type="button" className="search" onClick={newSearch} >
+        SEARCH
+      </button>
     </div>
   );
 }

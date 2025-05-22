@@ -41,7 +41,7 @@
     width: 100%;
     text-align: center;
     background-color: #c7eefa;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
     padding-top: 1%;
     border-radius: 1rem;
     display: flex;
@@ -62,14 +62,13 @@
 
 .method p {
     font-size: 1rem;
-    margin: 1rem;
+    margin-bottom: 1rem;
 }
 
 .table {
-    margin-top: 2%;
+    
     width: 100%;
     font-size: 0.8rem;
-    margin-top: 2%;
     display: flex;
     justify-content: center;
 }
@@ -82,18 +81,19 @@ table {
 
 tbody {
     justify-content: center;
+    
 }
 
 table tr {
 	display: table-cell;
     border: 1px rgb(22, 51, 165) solid;
+    
 }
 table tr td {
 	display: block;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    
 }
 
 td:nth-child(odd) {

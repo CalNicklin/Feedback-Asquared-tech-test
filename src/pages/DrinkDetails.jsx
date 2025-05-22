@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { cocktailDB } from "../API/api";
 import Loading from '../components/Loading';
 import './DrinkDetails.css'
+import { v4 as uuidv4 } from 'uuid';
 
 function DrinkDetails() {
     const [drink, setDrink] = useState([]);
@@ -42,18 +43,17 @@ function DrinkDetails() {
                                     <h3>Ingredients</h3>
                                     <table className="table">
                                         <tbody>
-
                                             <tr>
                                                 {d.ingredients.map((i) => {
                                                     return (
-                                                        <td key={d[i]}>{i}</td>
+                                                        <td key={uuidv4()}>{i}</td>
                                                     )
                                                 })}
                                             </tr>
                                             <tr>
                                                 {d.measures.map((i) => {
                                                     return (
-                                                        <td key={d.ingredients[i]}>{i}</td>
+                                                        <td key={uuidv4()}>{i}</td>
                                                     )
                                                 })}
                                             </tr>
