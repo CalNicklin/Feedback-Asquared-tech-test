@@ -63,10 +63,13 @@
 .method p {
     font-size: 1rem;
     margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .table {
-    
+    border-collapse: separate;
+    border-spacing: .5rem .2rem;
     width: 100%;
     font-size: 0.8rem;
     display: flex;
@@ -86,18 +89,26 @@ tbody {
 
 table tr {
 	display: table-cell;
-    border: 1px rgb(22, 51, 165) solid;
+    background-color: rgb(194, 199, 240);
+    min-width: 8rem;
     
 }
 table tr td {
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
 	display: block;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
+td:empty {
+    visibility: hidden;
+  }
+
 td:nth-child(odd) {
-    background-color: white;
+    background-color: aliceblue;
 }
 
 @media only screen and (max-width: 500px) {
@@ -110,6 +121,10 @@ td:nth-child(odd) {
     }
     table tr td {
         max-width: 8rem;
+    }
+
+    table tr {
+        min-width: 5rem;
     }
 }
 

@@ -16,7 +16,6 @@ function App() {
 
   async function search(term) {
     await cocktailDB.search(term).then((result) => setSearchResults(result));
-
   };
 
   useEffect(() => {
