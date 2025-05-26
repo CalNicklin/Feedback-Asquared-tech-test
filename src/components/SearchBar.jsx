@@ -24,11 +24,12 @@ function SearchBar(props) {
     }
   };
 
-  function newSearch() {
+  function newSearch(e) {
     if (term) {
       props.onSearch(term);
       navigate('/searchresults');
       handleClear();
+      e.preventDefault();
     }
   };
 
@@ -41,6 +42,7 @@ function SearchBar(props) {
         onKeyUp={keyUp}
         required
         value={term}
+        id="input"
       />
       <button id='button' type="button" className="search" onClick={newSearch} >
         SEARCH

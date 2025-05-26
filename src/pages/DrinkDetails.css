@@ -80,6 +80,7 @@ table {
 	display: flex;
     justify-content: center;
     width: 100%;
+    
 }
 
 tbody {
@@ -91,6 +92,7 @@ table tr {
 	display: table-cell;
     background-color: rgb(194, 199, 240);
     min-width: 8rem;
+    border-radius: 0.5rem;
     
 }
 table tr td {
@@ -101,6 +103,7 @@ table tr td {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    
 }
 
 td:empty {
@@ -120,11 +123,11 @@ td:nth-child(odd) {
         font-size: 0.8rem;
     }
     table tr td {
-        max-width: 8rem;
+        max-width: 10rem;
     }
 
     table tr {
-        min-width: 5rem;
+        min-width: 6rem;
     }
 }
 
