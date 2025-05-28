@@ -91,7 +91,7 @@ tbody {
 table tr {
 	display: table-cell;
     background-color: rgb(194, 199, 240);
-    min-width: 8rem;
+    width: 12rem;
     border-radius: 0.5rem;
     
 }
@@ -114,7 +114,13 @@ td:nth-child(odd) {
     background-color: aliceblue;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 670px) {
+    table tr {
+        width: 9rem
+    }
+}
+
+@media only screen and (max-width: 550px) {
     .table {
         font-size: 0.7rem;
     }
@@ -122,17 +128,22 @@ td:nth-child(odd) {
     .method p {
         font-size: 0.8rem;
     }
-    table tr td {
-        max-width: 10rem;
-    }
+    
 
     table tr {
-        min-width: 6rem;
+        width: 7rem;
     }
+
+    
 }
 
 @media only screen and (min-width: 1000px) {
     .table {
         font-size: 1.2rem;
     }
+
+    tr {
+        width: 14rem;
+    }
 }
+
